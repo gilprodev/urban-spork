@@ -53,7 +53,7 @@ export default {
       if (cookies.length) {
         out.delete("set-cookie");
         for (const cookie of cookies) {
-          out.append("set-cookie", cookie.replace(/;\\s*Domain=(?:\\.?floot\\.app|revista-sem-rodape\\.floot\\.app)(?=;|$)/gi, ""));
+          out.append("set-cookie", cookie.replace(/;\s*Domain=(?:\.?floot\.app|revista-sem-rodape\.floot\.app)(?=;|$)/gi, ""));
         }
       }
     }
